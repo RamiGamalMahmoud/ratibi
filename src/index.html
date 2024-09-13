@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html dir="rtl">
+
+<head>
+    <title>بيانات الموظفين</title>
+    <style>
+        @import "./scss/main.scss";
+    </style>
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="header">
+            <div class="header-contents">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaOT86wYal-s4JarVaOfzkCwuArZ18HKWrkQ&s">
+                <div class="input-group">
+                    <input class="input-text" type="text" id="searchTerm" placeholder="رقم الحساب أو الرقم الوظيفي">
+                    <button class="btn" onclick="search()">ابحث</button>
+                </div>
+                <h2>
+                    <span>تفاصيل المرتب لشهر : </span>
+                    <span>
+                        <?= getDetails().month ?> -
+                        <?= getDetails().year ?>
+                    </span>
+                </h2>
+            </div>
+        </div>
+
+        <div class="details" id="results"></div>
+    </div>
+
+    <script type="module">import js from "./script.js"; alert(js);</script>
+</body>
+
+
+
+</html>

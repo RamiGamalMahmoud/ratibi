@@ -1,0 +1,23 @@
+{
+  "name": "ratibi",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "glogin": "clasp login",
+    "gpush": "clasp push",
+    "gpull": "clasp pull",
+    "gclone": "clasp clone 1IKYSyRCr1QjdVoaQwAohf1V4GvudD62AFfGGHovpq-WQ5s2Fo4z6cepF --rootDir ./app",
+    "gstart": "clasp push -w",
+    "start": "parcel src/index.html --dist-dir ./app",
+    "build": "parcel build src/index.html --dist-dir ./app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@types/google-apps-script": "^1.0.83",
+    "parcel": "^2.12.0"
+  }
+}
